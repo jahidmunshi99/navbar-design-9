@@ -1,0 +1,45 @@
+@media (max-width:792px)  {
+    .menu-toggle{
+        /* display: block; */
+    }
+    .menu { 
+        position: absolute;
+        top: 60px;
+        right: -150%;
+        width: 100%;
+        background: #000;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.5s all ease;
+    }
+    .menu.active{
+        opacity: 1;
+        pointer-events: auto;
+        right: 0px;
+    }
+    .navbar .menu .nav-items {
+        display: block;
+        padding-top:10px;
+        width: 100%; 
+    }
+    .navbar .menu .nav-item{
+        padding: 16px 25px;   
+    }
+    .navbar .menu .nav-item a{
+    }
+    .navbar .menu .nav-item:hover{
+        background: var(--theme-color);
+    }
+    .navbar .logo label {
+        font-size: 1.8rem;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .darklight-searchbox {
+        margin-right: 25px;
+    }
+    .menu-toggle {
+        right: 2px;
+    }
+}

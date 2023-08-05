@@ -1,0 +1,217 @@
+/*====================== Fonts ======================*/
+@font-face{
+    font-family: theme-font;
+    src: url(../font/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: theme-medium;
+    src: url(../font/JosefinSans-Medium.ttf);
+}
+@font-face {
+    font-family: theme-bold;
+    src: url(../font/JosefinSans-Bold.ttf);
+}
+/*====================== Base ======================*/
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Custom Color */
+    --body-color:#000;
+    --theme-color:#ff5e00de;
+    --search-bg-color:#fff;
+    --light-white-color:#fff;
+    /* Typography */
+    --normal-font:theme-font;
+    --semibold-font:theme-medium;
+    --bold-font:theme-bold;
+    --normal-font-size:1rem;
+    --medum-font-size:1.2rem;
+    --small-font-size:0.8rem;
+}
+body{
+    font-family: var(--normal-font);
+}
+
+body.active{
+    background: var(--body-color);
+        /* Custom Color */
+        --body-color:#000000;
+        --theme-color:#004c97;
+        --search-bg-color:#000000;
+        --light-white-color:#fff;
+        /* Typography */
+        --normal-font:theme-font;
+        --semibold-font:theme-medium;
+        --bold-font:theme-bold;
+        --normal-font-size:1rem;
+        --medum-font-size:1.2rem;
+        --small-font-size:0.8rem;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--body-color);
+}
+.container{
+    max-width: 1280px;
+    padding: 0 3%;
+    margin: 0 auto;
+}
+/*====================== Header Area ======================*/
+.header-area{
+    background: var(--theme-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+.navbar .logo label{
+    font-size: 2.3rem;
+    font-weight: var(--bold-font);
+}
+.navbar .logo label span{
+    color: var(--light-white-color);
+}
+/* .navbar .menu */
+.navbar .menu .nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .navbar .menu ul li a*/
+.navbar .menu .nav-item{
+    padding: 0 15px ;
+    position: relative;
+}
+.navbar .menu .nav-item a{
+    color: var(--light-white-color);
+}
+
+.darklight-searchbox{
+    display: flex;
+    align-items: center;
+}
+.darklight-searchbox .dark-light, 
+.search-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+    margin: 0 5px;
+}
+.dark-light i, 
+.search-toggle i{
+    color: var(--light-white-color);
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.dark-light i.sun{
+    opacity: 0;
+    pointer-events: none;
+}
+.dark-light.active i.sun{
+    opacity: 1;
+    pointer-events: auto;
+}
+.dark-light.active i.moon{
+    opacity: 0;
+    pointer-events: none;
+}
+.search-toggle i.close{
+    opacity: 0;
+    pointer-events: none;
+}
+.search-toggle.active i.close{
+    opacity: 1;
+    pointer-events: auto;
+}
+.search-toggle.active i.search{
+    opacity: 0;
+    pointer-events: none;
+}
+.search-box{
+    position: relative;
+}
+.search-toggle.active ~ .search-field{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: -75px;
+}
+.search-field {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: -65px;
+	right: 10px;
+	width: 300px;
+	height: 40px;
+	background: var(--search-bg-color);
+	z-index: 1001;
+	box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all ease;
+}
+.search-field::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--theme-color);
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    transform: rotate(134deg);
+    z-index: -1;
+}
+.search-field input{
+    width: 100%;
+    height: 100%;
+    padding: 0 45px 0 10px;
+    outline: 0;
+    border: 2px solid var(--theme-color);
+    border-radius: 3px;
+    font-size: var(--small-font-size);
+}
+
+.search-field i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: var(--theme-color);
+}
+
+.menu-toggle{
+    color: var(--light-white-color);
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    cursor: pointer;
+    display: none;
+}
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
+/*====================== Fonts ======================*/
